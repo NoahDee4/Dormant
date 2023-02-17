@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+{% for message in get_flashed_messages() %}
+<!-- https://www.w3schools.com/howto/howto_js_alert.asp -->
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    {{ message }}
+</div>
+{% endfor %}
+
+    <div>
+    <!-- Source: https://www.codingnepalweb.com/text-typing-animation-using-only-html-css/ -->
+    <div class="wrapper">
+        <div class="static-txt">Matching Yale Roommates Based on</div>
+        <ul class="dynamic-txts">
+          <li><span>Interests 📚</span></li>
+          <li><span>Hobbies 🎾</span></li>
+          <li><span>Schedules 📅</span></li>
+          <li><span>And More... 🎶🏃🍕</span></li>
+        </ul>
+    </div>
+    <div>
+    <!-- Source: https://unsplash.com/s/photos/rooms-->
+        <img src = "static/room.png" width = 1723px>
+    </div>
+{% endblock %}
+

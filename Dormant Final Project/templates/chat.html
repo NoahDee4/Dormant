@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chat
+{% endblock %}
+
+{% block main %}
+<head>
+    <link href="/static/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<h1><center>Dormant Chat 💬</center></h1>
+<div>
+    <!-- used canva to make robot-->
+    <center><img src = "static/chatrobot.gif" width = 350></img></center>
+    <h2><center>Welcome to Chats</center></h2>
+    <br>
+    <h2><center>To begin, type the chat box and log in using the same credentials you have used to register. Type your message and send!</center></h2>
+    <div>.</div>
+</div>
+<!-- Source: https://rumbletalk.com/-->
+<center>
+    <div class="chat"><div id="rt-1b5c6cfb31b36742a48bd7eb913ae63c"></div> <script src="https://rumbletalk.com/client/?ZjMT~8ky"></script></div>
+</center>
+
+
+{% endblock %}

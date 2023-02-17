@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Profile
+{% endblock %}
+<center><h1>Profile Page</h1></center>
+{% block main %}
+<!-- Source: https://www.codingnepalweb.com/text-typing-animation-using-only-html-css/ -->
+<div class="wrapper">
+    <div class="static-txt"> Welcome to <FONT COLOR = #FC6D6D>{{name}}'s</FONT> User</div>
+    <ul class="dynamic-txts">
+      <li><span>Profile Page. . . 👤</span></li>
+      <li><span>个人资料页. . . 👋</span></li>
+      <li><span>प्रोफ़ाइल पृष्ठ. . . 🌱</span></li>
+      <li><span>Страница профиля. . . ☁️</span></li>
+    </ul>
+</div>
+
+
+<div class = "start_text">
+    <p>Your Name: <FONT COLOR = #FC6D6D>{{name}}</FONT></p>
+    <p>Your Email: <FONT COLOR = #FC6D6D>{{email}}</FONT></p>
+    <p>Your Waking Up Time: <FONT COLOR = #FC6D6D>{{user_awake}}</FONT></p>
+    <p>Your Bed Time: <FONT COLOR = #FC6D6D>{{user_sleep}}</FONT></p>
+    <p>Your Weekday Schedule: <FONT COLOR = #FC6D6D>{{user_weekday}}</FONT></p>
+    <p>Your Weekend Schedule: <FONT COLOR = #FC6D6D>{{user_weekend}}</FONT></p>
+    <p>Your Hobby: <FONT COLOR = #FC6D6D>{{user_hobbies}}</FONT></p>
+    <p>Your Music Taste: <FONT COLOR = #FC6D6D>{{user_music}}</FONT></p>
+    <p>Your Shower Schedule: <FONT COLOR = #FC6D6D>{{user_shower}}</FONT></p>
+    <p>Your Cleaning Schedule: <FONT COLOR = #FC6D6D>{{user_cleanliness}}</FONT></p>
+    <p>Your Comfortability on Alcohol: <FONT COLOR = #FC6D6D>{{user_alcohol}} comfortable</FONT></p>
+    <p>Your Sharing Preference: <FONT COLOR = #FC6D6D>{{user_weekend}}</FONT></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Log In
+{% endblock %}
+
+{% block main %}
+
+{% for message in get_flashed_messages() %}
+<!-- https://www.w3schools.com/howto/howto_js_alert.asp -->
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    {{ message }}
+</div>
+{% endfor %}
+
+<head>
+    <link href="/static/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<h1><center>Log In 🔑</center></h1>
+<div>
+    <!-- used https://www.canva.com/ to make robot-->
+    <center><img src = "static/loginrobot.gif" width = 350></img></center>
+    <h2><center>Enter your account details below</center></h2>
+    <p><center>Don't have an account? <a href="register.html">Register Here</a></center></p>
+</div>
+
+<!-- https://www.w3schools.com/css/css_padding.asp -->
+<center>
+    <div class = "form">
+    <form action = "#" method="post">
+        <div class="container">
+          <input type="text" placeholder="Email" name="email" id="email" required>
+          <input type="password" placeholder="Password" name="password" id="password" required>
+          <button type="submit" class="registerbtn">Login</button>
+        </div>
+    </form>
+    </div>
+</center>
+{% endblock %}

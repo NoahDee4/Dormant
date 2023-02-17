@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>Dormant: {% block title %}{% endblock %}</title>
+        <link href="/static/styles.css" rel="stylesheet">
+        <!--Source: https://favicon.io/-->
+        <link href="/static/world.ico" rel="icon">
+    </head>
+
+    <body>
+        <div class = "body">
+            <nav>
+                <!-- used https://www.canva.com/ to make these-->
+                <a href="/register"><img src = "static/menuicon.png" class="menuicon"></a>
+                <a href="/"><img src = "static/logo.png" class="logo"></a>
+                <ul>
+                    {% if session["email"] %}
+                    <li><a href="/roommate" class = navtext>Find a Roommate 🌙</a></li>
+                    <li><a href="/match" class = navtext>Get Matched ➡️</a></li>
+                    <li><a href="/chat" class = navtext>Chat 💬</a></li>
+                    <li><a href="/profile" class = navtext>Profile 💻</a></li>
+                    <li><a href="/update" class = navtext>Update Profile 🚀</a></li>
+                    <li><a href="/logout" class = navtext>Log Out 👋</a></li>
+
+                    {% else %}
+                    <li><a href="/register" class = navtext>Register 🗣️</a></li>
+                    <li><a href="/login" class = navtext>Log In 🔑</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <main>
+                {% block main %}{% endblock %}
+            </main>
+        </div>
+    </body>
+</html>

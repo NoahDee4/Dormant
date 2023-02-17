@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Get Matched
+{% endblock %}
+
+
+
+{% block main %}
+{% for message in get_flashed_messages() %}
+<!-- https://www.w3schools.com/howto/howto_js_alert.asp -->
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    {{ message }}
+</div>
+{% endfor %}
+
+<h1><center>Congratulations here is your potential Roommate Match Review. . . 🧸</center></h1>
+<h1><center>🎉 🥳 🎉 🥳 🎉</center></h1>
+<br>
+<div>
+    <center><img src = "static/matchrobot.gif" width = 350></img></center>
+</div>
+
+<h1><center>On Waking Up Schedule. . . ⏰</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{awake_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{awake_email}}</FONT>.</p>
+
+<h1><center>On Sleeping Schedule. . . 😴</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{sleep_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{sleep_email}}</FONT>.</p>
+
+<h1><center>On Weekday Habits. . . ✨</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{weekday_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{weekday_email}}</FONT>.</p>
+
+<h1><center>On Weekend Habits. . . 🎊</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{weekend_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{weekend_email}}</FONT>.</p>
+
+<h1><center>On Hobbies. . . ⚽</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{hobbies_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{hobbies_email}}</FONT>.</p>
+
+<h1><center>On Music. . . 🎺</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{music_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{music_email}}</FONT>.</p>
+
+<h1><center>On Showering Schedule. . . 🧼</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{shower_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{shower_email}}</FONT>.</p>
+
+<h1><center>On Room Cleanliness. . . 🧽</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{cleanliness_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{cleanliness_email}}</FONT>.</p>
+
+<h1><center>On Comfortability around Alcohol. . . 🍾</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{comfortability_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{comfortability_email}}</FONT>.</p>
+
+<h1><center>On Willingness to Share. . . 🍔</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{share_name}}</FONT>. You can contact them via email <FONT COLOR = #FC6D6D>{{share_email}}</FONT>.</p>
+
+<br>
+
+<h1><center>Overall Match . . . 📩</center></h1>
+<p class = "start_text">You matched with <FONT COLOR = #FC6D6D>{{overall_match_name}}</FONT> because you shared the most similarities amongst our ten metrics. You can contact them via email <FONT COLOR = #FC6D6D>{{overall_match_email}}</FONT>.</p>
+
+<div>.</div>
+{% endblock %}

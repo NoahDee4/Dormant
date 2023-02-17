@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Roommate Match
+{% endblock %}
+
+{% block main %}
+<head>
+    <link href="/static/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<h1><center>Find a Roommate 🌕</center></h1>
+<div>
+    <!-- used canva to make robot-->
+    <center><img src = "static/roommaterobot.gif" width = 350></img></center>
+    <h2><center>Fill out the Information below to get Matched! </center></h2>
+</div>
+
+<!-- https://www.w3schools.com/css/css_padding.asp -->
+
+<div class = "form">
+<form action = "#" method="post">
+
+        <br>
+        <p class = "dropdown"><font size="+2">1. What time do you usually wake up? ☀️</font></p>
+        <select name ="awake" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "5:00 AM">5:00 AM</option>
+            <option value = "6:00 AM">6:00 AM</option>
+            <option value = "7:00 AM">7:00 AM</option>
+            <option value = "8:00 AM">8:00 AM</option>
+            <option value = "9:00 AM">9:00 AM</option>
+            <option value = "10:00 AM">10:00 AM</option>
+            <option value = "11:00 AM">11:00 AM</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">2. What time do you usually go to bed? 🌙</font></p>
+        <select name ="sleep" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "8:00 PM">8:00 PM</option>
+            <option value = "9:00 PM">9:00 PM</option>
+            <option value = "10:00 PM">10:00 PM</option>
+            <option value = "11:00 PM">11:00 PM</option>
+            <option value = "12:00 PM">12:00 AM</option>
+            <option value = "1:00 PM">1:00 AM</option>
+            <option value = "2:00 PM">2:00 AM</option>
+            <option value = "3:00 PM">3:00 AM</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">3. What does a typical weekday look like to you? 📅</font></p>
+        <select name ="weekday" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Doing Homework">Doing Homework</option>
+            <option value = "Relaxed">Relaxed</option>
+            <option value = "Partying">Partying</option>
+            <option value = "Talking to Friends">Talking to Friends</option>
+            <option value = "Drinking">Drinking</option>
+            <option value = "Sleeping Early">Sleeping Early</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">4. What does a typical weekend look like to you? ⛱️</font></p>
+        <select name ="weekend" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Doing Homework">Doing Homework</option>
+            <option value = "Relaxed">Relaxed</option>
+            <option value = "Partying">Partying</option>
+            <option value = "Talking to Friends">Talking to Friends</option>
+            <option value = "Drinking">Drinking</option>
+            <option value = "Sleeping Early">Sleeping Early</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">5. Which of the following do you enjoy the most?  🧗‍♀️</font></p>
+        <select name ="hobbies" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Listening to Music">Listening to Music</option>
+            <option value = "Taking Walks">Taking Walks/Enjoying Outdoors</option>
+            <option value = "Watching Movies">Watching Movies</option>
+            <option value = "Snacking">Snacking</option>
+            <option value = "Meeting New People">Meeting New People</option>
+            <option value = "Napping">Napping</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">6. What type of music appeals to you the most? 🎶</font></p>
+        <select name ="music" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Loud Pop">Loud Pop</option>
+            <option value = "Loud Rave">Loud Rave</option>
+            <option value = "Softer Lo-Fi">Softer Lo-Fi</option>
+            <option value = "Calm">Calm</option>
+            <option value = "Trending">Trending</option>
+            <option value = "No Music">No Music</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">7. When do you typically take a shower? 🚿</font></p>
+        <select name ="shower" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Morning Shower">Morning Shower</option>
+            <option value = "Night Shower">Night Shower</option>
+            <option value = "Afternoon Shower">Afternoon Shower</option>
+            <option value = "Indifferent">Indifferent</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">8. How often do you clean your room? 🧹</font></p>
+        <select name ="cleanliness" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Once a day">Once a day</option>
+            <option value = "Once a week">Once a week</option>
+            <option value = "Once a month">Once a month</option>
+            <option value = "Once a semester">Once a semester</option>
+            <option value = "Once a year">Once a year</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">9. Do you feel comfortable around alcohol? 🍷</font></p>
+        <select name ="comfortability" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Yes">Yes</option>
+            <option value = "No">No</option>
+        </select>
+
+        <br>
+        <p class = "dropdown"><font size="+2">10. Do you feel comfortable sharing your things? 👕</p></font>
+        <select name ="share" class = "dropdown">
+            <option value = "">Select Option</option>
+            <option value = "Yes">Yes, with permission</option>
+            <option value = "No">No, I tend to be more personal</option>
+        </select>
+        <br>
+        <center>
+            <br>
+                <input type="text" placeholder="Email (Must be same email as registered for account)" name="email" id="email" required>
+            <br>
+              <button type="submit" class="registerbtn">Submit</button>
+        </center>
+</form>
+</div>
+{% endblock %}
